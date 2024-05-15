@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cardHighlight {
+  min-height: 100%;
+}
+
+Button#disabled {
+  background-color: #ccc; /* Grey background */
+  color: #666; /* Dark grey text */
+  border: 1px solid #aaa; /* Darker border */
+  cursor: not-allowed; /* Shows a 'no entry' cursor */
+}
+
+.profile-container {
+  font-size: 18px;
+  /* border: 2px solid red; */
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 20px;
+  margin-left: 50px;
+}
+
+/* Styles for the login and registration form */
+
+.centered-form {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 50px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-form-login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  max-width: 500px;
+}
+
+.centered-form-register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50vw;
+  width: 500px;
+}
+
+.form-fields {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
